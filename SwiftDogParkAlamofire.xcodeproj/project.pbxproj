@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		B0C359411ED37C33000205DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C359401ED37C33000205DC /* AppDelegate.swift */; };
-		B0C359431ED37C33000205DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C359421ED37C33000205DC /* ViewController.swift */; };
+		B0C359431ED37C33000205DC /* DogParkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C359421ED37C33000205DC /* DogParkViewController.swift */; };
 		B0C359461ED37C33000205DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0C359441ED37C33000205DC /* Main.storyboard */; };
 		B0C359481ED37C33000205DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0C359471ED37C33000205DC /* Assets.xcassets */; };
 		B0C3594B1ED37C33000205DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0C359491ED37C33000205DC /* LaunchScreen.storyboard */; };
+		B0C359541ED37D2D000205DC /* DogPark.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C359521ED37D2D000205DC /* DogPark.swift */; };
+		B0C359551ED37D2D000205DC /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C359531ED37D2D000205DC /* Search.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B0C3593D1ED37C32000205DC /* SwiftDogParkAlamofire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDogParkAlamofire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0C359401ED37C33000205DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B0C359421ED37C33000205DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B0C359421ED37C33000205DC /* DogParkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogParkViewController.swift; sourceTree = "<group>"; };
 		B0C359451ED37C33000205DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0C359471ED37C33000205DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0C3594A1ED37C33000205DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0C3594C1ED37C33000205DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0C359521ED37D2D000205DC /* DogPark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogPark.swift; sourceTree = "<group>"; };
+		B0C359531ED37D2D000205DC /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				B0C359401ED37C33000205DC /* AppDelegate.swift */,
-				B0C359421ED37C33000205DC /* ViewController.swift */,
+				B0C359421ED37C33000205DC /* DogParkViewController.swift */,
+				B0C359521ED37D2D000205DC /* DogPark.swift */,
+				B0C359531ED37D2D000205DC /* Search.swift */,
 				B0C359441ED37C33000205DC /* Main.storyboard */,
 				B0C359471ED37C33000205DC /* Assets.xcassets */,
 				B0C359491ED37C33000205DC /* LaunchScreen.storyboard */,
@@ -136,7 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0C359431ED37C33000205DC /* ViewController.swift in Sources */,
+				B0C359541ED37D2D000205DC /* DogPark.swift in Sources */,
+				B0C359551ED37D2D000205DC /* Search.swift in Sources */,
+				B0C359431ED37C33000205DC /* DogParkViewController.swift in Sources */,
 				B0C359411ED37C33000205DC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
