@@ -4,6 +4,6 @@ This is the basic repo you'll want to follow along with the tutorial on creating
 
 # Versions
 
-* Xcode - 8.2 \n
+* Xcode - 8.2
 * Alamofire - 4.4
 
