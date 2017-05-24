@@ -21,8 +21,8 @@ class Search {
       "Authorization":"Token token=5f93476d86b171df78e093b222420bd7",
       ]
     
-    Alamofire.request("http://localhost:3000/api/v1/dog_parks", method: .get, headers: headers)
-      .validate(statusCode: 200..<300)
+    Alamofire.request("http://localhost:3000/api/v1/dog_parks", headers: headers) // GET is the default HTTP method
+      .validate() // Default statusCode validation is 200..<300
       .responseJSON() { response in
         
         if (response.result.error == nil) {
