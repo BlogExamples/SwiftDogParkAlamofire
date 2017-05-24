@@ -37,6 +37,14 @@ class DogParkViewController: UIViewController {
       ])
     
     
+    Search.requestAllDogParks() { isSuccessful, dogParks in
+      if isSuccessful {
+        self.dogParks = dogParks
+      } else {
+        // Let the user know the request failed
+      }
+    }
+    
   }
   
   override func didReceiveMemoryWarning() {

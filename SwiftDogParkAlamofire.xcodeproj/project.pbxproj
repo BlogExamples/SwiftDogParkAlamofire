@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B0D1CAB430CA2FE6784379F /* Pods_SwiftDogParkAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B28144F708F9A2810F7F9F8 /* Pods_SwiftDogParkAlamofire.framework */; };
 		B0C359411ED37C33000205DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C359401ED37C33000205DC /* AppDelegate.swift */; };
 		B0C359431ED37C33000205DC /* DogParkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C359421ED37C33000205DC /* DogParkViewController.swift */; };
 		B0C359461ED37C33000205DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0C359441ED37C33000205DC /* Main.storyboard */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1CEE5E61E5297984DFAB475E /* Pods-SwiftDogParkAlamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDogParkAlamofire.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDogParkAlamofire/Pods-SwiftDogParkAlamofire.release.xcconfig"; sourceTree = "<group>"; };
+		37A9D91978375A11A8F47B54 /* Pods-SwiftDogParkAlamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDogParkAlamofire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDogParkAlamofire/Pods-SwiftDogParkAlamofire.debug.xcconfig"; sourceTree = "<group>"; };
+		5B28144F708F9A2810F7F9F8 /* Pods_SwiftDogParkAlamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDogParkAlamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0C3593D1ED37C32000205DC /* SwiftDogParkAlamofire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDogParkAlamofire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0C359401ED37C33000205DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0C359421ED37C33000205DC /* DogParkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogParkViewController.swift; sourceTree = "<group>"; };
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B0D1CAB430CA2FE6784379F /* Pods_SwiftDogParkAlamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		474802B1F50F5FF32F1B4926 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B28144F708F9A2810F7F9F8 /* Pods_SwiftDogParkAlamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58025BF360BF29869A5BF209 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37A9D91978375A11A8F47B54 /* Pods-SwiftDogParkAlamofire.debug.xcconfig */,
+				1CEE5E61E5297984DFAB475E /* Pods-SwiftDogParkAlamofire.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B0C359341ED37C32000205DC = {
 			isa = PBXGroup;
 			children = (
 				B0C3593F1ED37C32000205DC /* SwiftDogParkAlamofire */,
 				B0C3593E1ED37C32000205DC /* Products */,
+				58025BF360BF29869A5BF209 /* Pods */,
+				474802B1F50F5FF32F1B4926 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0C3594F1ED37C33000205DC /* Build configuration list for PBXNativeTarget "SwiftDogParkAlamofire" */;
 			buildPhases = (
+				FD7E610AC54649C81475D011 /* [CP] Check Pods Manifest.lock */,
 				B0C359391ED37C32000205DC /* Sources */,
 				B0C3593A1ED37C32000205DC /* Frameworks */,
 				B0C3593B1ED37C32000205DC /* Resources */,
+				2A777F73D42A5B5C0E946935 /* [CP] Embed Pods Frameworks */,
+				BBFBFC0529132385B7B1C42F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,6 +163,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A777F73D42A5B5C0E946935 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftDogParkAlamofire/Pods-SwiftDogParkAlamofire-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBFBFC0529132385B7B1C42F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftDogParkAlamofire/Pods-SwiftDogParkAlamofire-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD7E610AC54649C81475D011 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B0C359391ED37C32000205DC /* Sources */ = {
@@ -264,6 +339,7 @@
 		};
 		B0C359501ED37C33000205DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37A9D91978375A11A8F47B54 /* Pods-SwiftDogParkAlamofire.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftDogParkAlamofire/Info.plist;
@@ -276,6 +352,7 @@
 		};
 		B0C359511ED37C33000205DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CEE5E61E5297984DFAB475E /* Pods-SwiftDogParkAlamofire.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftDogParkAlamofire/Info.plist;

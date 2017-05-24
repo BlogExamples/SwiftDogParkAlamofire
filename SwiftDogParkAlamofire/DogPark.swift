@@ -8,6 +8,17 @@
 
 import Foundation
 
+enum SerializationError: Error {
+  case missing(String)
+}
+
 struct DogPark {
   var name: String
+  
+  init(json: [String: Any]) throws {
+    guard let name = json["name"] as? String else {
+      throw SerializationError.missing("name")
+    }
+    self.name = name
+  }
 }

@@ -1,0 +1,6 @@
+framework module Pods_SwiftDogParkAlamofire {
+  umbrella header "Pods-SwiftDogParkAlamofire-umbrella.h"
+
+  export *
+  module * { export * }
+}
